@@ -15,10 +15,10 @@ ARCH="arm64"
 OS="darwin"
 
 ```
-#docker build \ 
---build-arg PROM_VERSION=3.5.0 \
-            ARCH="amd64" \
-            OS="linux" \
--t my_prom .
+#docker build \
+  --build-arg PROM_VERSION=3.5.0 \
+  --build-arg ARCH=amd64 \
+  --build-arg OS=linux \
+  -t my_prom .
 #docker run -d -p 9090:9090 my_prom
 ```
